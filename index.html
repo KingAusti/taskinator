@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
 </head>
 
 <body>
+
     <header>
         <h1 class="page-title">Taskinator</h1>
         <p>Click the button below to add a new task!</p>
@@ -25,21 +27,33 @@
               </select>
             </div>
             <div class="form-group">
-        <button class="btn" id="save-task">Add Task</button>
-        </div>
+                <button class="btn" id="save-task" type="submit">Add Task</button>
+            </div>
+        </form>
     </header>
     
-    <main class="page-content">
+    <main class="page-content" id="page-content">
+        <!--tasks to do-->
         <section class="task-list-wrapper">
             <h2 class="list-title">Tasks To-Do</h2>
             <ul class="task-list" id="tasks-to-do"></ul>
+        </section>
+        <!--tasks in progress-->
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Tasks in Progress</h2>
+            <ul class="task-list" id="tasks-in-progress"></ul>
+        </section>
+        <!--tasks completed-->
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Tasks Completed</h2>
+            <ul class="task-list" id="tasks-completed"></ul>
         </section>
     </main>
 
     <footer>
         &copy;2020 by Taskinator
     </footer>
-    
+
     <script src="./Assets/JS/script.js"></script>
 </body>
 
